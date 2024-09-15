@@ -1,0 +1,134 @@
+.hover {
+    border: 1px solid transparent !important;
+    transition: all 0.3s linear !important;
+    cursor: pointer;
+}
+
+.card.hover:hover {
+    box-shadow: none !important;
+    border: 1px solid rgba(59, 59, 59, 0.164) !important;
+    border-style: ridge !important;
+}
+
+li.hover:hover {
+    letter-spacing: 1px !important;
+}
+
+.arrow {
+    border: solid rgba(255, 255, 255, 0.308);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.fa-facebook-f {
+    padding-left: 13px !important;
+    padding-right: 13px !important;
+}
+
+.plc::placeholder {
+    color: rgba(255, 255, 255, 0.466);
+}
+
+a.active {
+    color: green !important;
+}
+
+.corner {
+    border-top: 20px solid green;
+    border-bottom: 20px solid green;
+    border-left: 20px solid green;
+    height: 100%;
+    width: 20%;
+    top: 0px;
+    left: 0px;
+}
+
+.li-active {
+    border-color: green !important;
+    border-bottom-width: 2px !important;
+}
+
+.job-hover {
+    border: 1px solid transparent;
+}
+
+.job-hover:hover {
+    box-shadow: none !important;
+    border: 1px solid rgba(59, 59, 59, 0.164) !important;
+    border-style: ridge !important;
+}
+
+.indicator {
+    background-color: white !important;
+    height: 6px !important;
+    width: 6px !important;
+    border: 6px solid green !important;
+    opacity: 100% !important;
+    border-radius: 3px;
+}
+
+.carousel-indicators button.active {
+    background-color: black !important;
+}
+
+.carousel-indicators {
+    position: static !important;
+    margin-top: 20px;
+}
+
+/********************/
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 4 */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0) !important;
+}
